@@ -19,7 +19,7 @@ public class LaunchingApp {
             DesiredCapabilities des = new DesiredCapabilities();
             des.setCapability(MobileCapabilityTypeEx.PLATFORM_NAME, "android");
             des.setCapability(MobileCapabilityTypeEx.AUTOMATION_NAME, "uiautomator2");
-            des.setCapability(MobileCapabilityTypeEx.UDID, "99251FFAZ005TH");
+            des.setCapability(MobileCapabilityTypeEx.UDID, "09261FDD4003CH");
             des.setCapability(MobileCapabilityTypeEx.APP_PACKAGE, "com.wdiodemoapp");
             des.setCapability(MobileCapabilityTypeEx.APP_ACTIVITY, "com.wdiodemoapp.MainActivity");
 
@@ -35,4 +35,6 @@ public class LaunchingApp {
             e.printStackTrace();
         }
         }
+
+
 }
