@@ -59,7 +59,10 @@ public class SwipeToOpenNotification {
         }
 
         // Tìm 1 element từ 1 element khác, narrow down cái scope tìm kiếm
-        List<MobileElement> notificationElems = androidDriver.findElements(By.id("android:id/notification_main_column")); //android:id/status_bar_latest_event_content
+        List<MobileElement> notificationElems = androidDriver.findElements(By.id("android:id/notification_main_column")); //android:id/status_bar_latest_event_content   android:id/notification_main_column
+        if (notificationElems.isEmpty()){
+            throw new RuntimeException("Notification list is empty");
+        }
         List<Notification> notifications = new ArrayList<>();
 
         // Functional Interface + Lambda expression
@@ -69,14 +72,15 @@ public class SwipeToOpenNotification {
             By bigTextById = MobileBy.id("android:id/big_text"); //android:id/big_text
             By textById = MobileBy.id("android:id/text"); //android:id/notification_main_column  android:id/text android:id/title
 
-            List<MobileElement> bigTextElems = androidDriver.findElements(bigTextById);
-            List<MobileElement> textElems = androidDriver.findElements(textById);
+            List<MobileElement> bigTextElems = notificationElem.findElements(bigTextById);
+            List<MobileElement> textElems = notificationElem.findElements(textById);
             List<MobileElement> notificationBodyElems = !bigTextElems.isEmpty() ? bigTextElems : textElems;
             String notificationBody = notificationBodyElems.isEmpty() ? null : notificationBodyElems.get(0).getText();
 
             notifications.add(new Notification(notificationTitle,notificationBody));
 
         });
+
         // Verification
         notifications.forEach(notification -> {
             System.out.println(notification);

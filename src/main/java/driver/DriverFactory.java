@@ -57,7 +57,7 @@ public class DriverFactory {
         des.setCapability(MobileCapabilityTypeEx.APP_ACTIVITY, "com.wdiodemoapp.MainActivity");
 
         androidDriver = new AndroidDriver<MobileElement>(appiumServer.getUrl(),des);
-        androidDriver.manage().timeouts().implicitlyWait(3L, TimeUnit.SECONDS); // cách nhau 500 miliseconds giữa các lần
+        androidDriver.manage().timeouts().implicitlyWait(2L, TimeUnit.SECONDS); // cách nhau 500 miliseconds giữa các lần
 
 //        if (appiumDriver != null) {
 //            appiumDriver.manage().timeouts().implicitlyWait(30L, TimeUnit.SECONDS);
