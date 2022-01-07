@@ -1,6 +1,7 @@
 package driver;
 
 import caps.MobileCapabilityTypeEx;
+import flags.AndroidServerFlagEx;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -8,8 +9,6 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import java.net.URL;
-import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class DriverFactory {
@@ -18,6 +17,8 @@ public class DriverFactory {
 
     public static void startAppiumServer(){
         AppiumServiceBuilder appiumServiceBuilder = new AppiumServiceBuilder();
+        //Install Web Driver for Web context
+        appiumServiceBuilder.withArgument(AndroidServerFlagEx.ALLOW_INSECURE,"chromedriver_autodownload");
 //        appiumServiceBuilder.withIPAddress("127.0.0.1").usingPort(4723);
         appiumServiceBuilder.withIPAddress("127.0.0.1").usingAnyFreePort();
         appiumServer = AppiumDriverLocalService.buildService(appiumServiceBuilder);
