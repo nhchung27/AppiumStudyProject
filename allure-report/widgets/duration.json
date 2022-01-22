@@ -1,0 +1,31 @@
+[ {
+  "uid" : "320e07d2ebbb431",
+  "name" : "loginWithValidCreds",
+  "time" : {
+    "start" : 1642873830681,
+    "stop" : 1642873840721,
+    "duration" : 10040
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "37c8438bc2034d36",
+  "name" : "testMethod02",
+  "time" : {
+    "start" : 1642873841703,
+    "stop" : 1642873841859,
+    "duration" : 156
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d792a0b1bf212493",
+  "name" : "loginWithValidCreds",
+  "time" : {
+    "start" : 1642873830681,
+    "stop" : 1642873841001,
+    "duration" : 10320
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

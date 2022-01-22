@@ -7,6 +7,7 @@ import io.appium.java_client.MobileElement;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -22,7 +23,8 @@ public class TakingScreenShot {
             loginLableElem.click();
 
             WebDriverWait wait = new WebDriverWait(androidDriver, 10L);
-            wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("button-LOGIN")));
+            WebElement loginBtnElement =
+                    wait.until(ExpectedConditions.presenceOfElementLocated(MobileBy.AccessibilityId("button-LOGIN")));
 
             
 
@@ -32,10 +34,17 @@ public class TakingScreenShot {
             FileUtils.copyFile(base64ScreenshotData,new File(fileLocation));
 
             // Taking screenshoot on element
-            MobileElement loginBtnElement = androidDriver.findElement(MobileBy.AccessibilityId("button-LOGIN"));
+//            MobileElement loginBtnElement = androidDriver.findElement(MobileBy.AccessibilityId("button-LOGIN"));
             File base64SLoginBtnData = loginBtnElement.getScreenshotAs(OutputType.FILE);
             String loginBtnDataLocation = System.getProperty("user.dir").concat("/screenshots/").concat("LoginButton.png");
             FileUtils.copyFile(base64SLoginBtnData,new File(loginBtnDataLocation));
+
+
+            // Taking screenshoot an area
+            MobileElement homeScreen = androidDriver.findElement(MobileBy.AccessibilityId("Login-screen"));
+            File base64SHomeScreenData = homeScreen.getScreenshotAs(OutputType.FILE);
+            String homeScreeFileLocation = System.getProperty("user.dir").concat("/screenshots/").concat("HomeScreen.png");
+            FileUtils.copyFile(base64SHomeScreenData,new File(homeScreeFileLocation));
 
         } catch (Exception e){
             e.printStackTrace();

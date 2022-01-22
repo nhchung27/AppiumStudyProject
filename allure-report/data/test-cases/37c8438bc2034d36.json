@@ -1,0 +1,168 @@
+{
+  "uid" : "37c8438bc2034d36",
+  "name" : "testMethod02",
+  "fullName" : "test.authentication.LoginTestWithBaseTest.testMethod02",
+  "historyId" : "c06e6f33eacc542f332ed9e93f692333",
+  "time" : {
+    "start" : 1642873841703,
+    "stop" : 1642873841859,
+    "duration" : 156
+  },
+  "status" : "failed",
+  "statusMessage" : "null",
+  "statusTrace" : "java.lang.AssertionError: null\n\tat org.testng.Assert.fail(Assert.java:110)\n\tat org.testng.Assert.fail(Assert.java:115)\n\tat test.authentication.LoginTestWithBaseTest.testMethod02(LoginTestWithBaseTest.java:33)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1257)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:808)\n\tat org.testng.TestRunner.run(TestRunner.java:603)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:429)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:32)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 4,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "Init all appium sessions",
+    "time" : {
+      "start" : 1642873829547,
+      "stop" : 1642873829553,
+      "duration" : 6
+    },
+    "description" : "Init all appium sessions",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "Capture Screenshot on failure",
+    "time" : {
+      "start" : 1642873841861,
+      "stop" : 1642873842638,
+      "duration" : 777
+    },
+    "description" : "Capture Screenshot on failure",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9dae38bdc6db31dc",
+      "name" : "testMethod02",
+      "source" : "9dae38bdc6db31dc.png",
+      "type" : "image/png",
+      "size" : 130272
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1642873842639,
+      "stop" : 1642873842846,
+      "duration" : 207
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.authentication.LoginTestWithBaseTest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.authentication.LoginTestWithBaseTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testMethod02"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "suite",
+    "value" : "Authentication"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.authentication.LoginTestWithBaseTest"
+  }, {
+    "name" : "host",
+    "value" : "LVNHCMAC0000276"
+  }, {
+    "name" : "thread",
+    "value" : "61940@LVNHCMAC0000276.TestNG-tests-1(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "systemPort",
+    "value" : "8300"
+  }, {
+    "name" : "udid",
+    "value" : "09261FDD4003CH"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f1bfa504ca70b5e0",
+      "status" : "failed",
+      "statusDetails" : "null",
+      "time" : {
+        "start" : 1642873798439,
+        "stop" : 1642873799057,
+        "duration" : 618
+      }
+    }, {
+      "uid" : "bf475b74bda7c26",
+      "status" : "failed",
+      "statusDetails" : "null",
+      "time" : {
+        "start" : 1642873457468,
+        "stop" : 1642873457578,
+        "duration" : 110
+      }
+    }, {
+      "uid" : "2e9234c3ad657ba",
+      "status" : "failed",
+      "statusDetails" : "null",
+      "time" : {
+        "start" : 1642873325022,
+        "stop" : 1642873325161,
+        "duration" : 139
+      }
+    }, {
+      "uid" : "aa8d6e58e6e94ca1",
+      "status" : "failed",
+      "statusDetails" : "null",
+      "time" : {
+        "start" : 1642872976312,
+        "stop" : 1642872976440,
+        "duration" : 128
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "37c8438bc2034d36.json",
+  "parameterValues" : [ "8300", "09261FDD4003CH" ]
+}

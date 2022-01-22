@@ -1,0 +1,76 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Regression",
+    "children" : [ {
+      "name" : "Authentication",
+      "children" : [ {
+        "name" : "test.authentication.LoginTestWithBaseTest",
+        "children" : [ {
+          "name" : "loginWithValidCreds",
+          "uid" : "320e07d2ebbb431",
+          "parentUid" : "766bbbc6df79a06b3dc4d6d1fbc74e74",
+          "status" : "failed",
+          "time" : {
+            "start" : 1642873830681,
+            "stop" : 1642873840721,
+            "duration" : 10040
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 4,
+          "retriesStatusChange" : false,
+          "parameters" : [ "8300", "09261FDD4003CH" ]
+        }, {
+          "name" : "testMethod02",
+          "uid" : "37c8438bc2034d36",
+          "parentUid" : "766bbbc6df79a06b3dc4d6d1fbc74e74",
+          "status" : "failed",
+          "time" : {
+            "start" : 1642873841703,
+            "stop" : 1642873841859,
+            "duration" : 156
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 4,
+          "retriesStatusChange" : false,
+          "parameters" : [ "8300", "09261FDD4003CH" ]
+        } ],
+        "uid" : "766bbbc6df79a06b3dc4d6d1fbc74e74"
+      } ],
+      "uid" : "cbc2903f5662287f992d7a286e1d885c"
+    }, {
+      "name" : "Authentication 2",
+      "children" : [ {
+        "name" : "test.authentication.LoginTestWithBaseTest2",
+        "children" : [ {
+          "name" : "loginWithValidCreds",
+          "uid" : "d792a0b1bf212493",
+          "parentUid" : "bb6cfa17437b3a19cab270381e900c76",
+          "status" : "failed",
+          "time" : {
+            "start" : 1642873830681,
+            "stop" : 1642873841001,
+            "duration" : 10320
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 4,
+          "retriesStatusChange" : false,
+          "parameters" : [ "8400", "99251FFAZ005TH" ]
+        } ],
+        "uid" : "bb6cfa17437b3a19cab270381e900c76"
+      } ],
+      "uid" : "e27b63636f8881878150de0694e11384"
+    } ],
+    "uid" : "5ba398ba8a4e16d50ebb84d8f641e8da"
+  } ]
+}

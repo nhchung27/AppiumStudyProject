@@ -1,0 +1,126 @@
+{
+  "uid" : "27e1baf93848f71d",
+  "name" : "loginWithValidCreds",
+  "fullName" : "test.authentication.LoginTestWithBaseTest.loginWithValidCreds",
+  "historyId" : "b4fe80fe9a579e1d4f401aac089685a3",
+  "time" : {
+    "start" : 1642873788632,
+    "stop" : 1642873797675,
+    "duration" : 9043
+  },
+  "status" : "failed",
+  "statusMessage" : "null",
+  "statusTrace" : "java.lang.AssertionError: null\n\tat org.testng.Assert.fail(Assert.java:110)\n\tat org.testng.Assert.fail(Assert.java:115)\n\tat test.authentication.LoginTestWithBaseTest.loginWithValidCreds(LoginTestWithBaseTest.java:25)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)\n\tat org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)\n\tat org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)\n\tat org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)\n\tat org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)\n\tat org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.util.ArrayList.forEach(ArrayList.java:1257)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:808)\n\tat org.testng.TestRunner.run(TestRunner.java:603)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:429)\n\tat org.testng.SuiteRunner.access$000(SuiteRunner.java:32)\n\tat org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)\n\tat org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeTest",
+    "time" : {
+      "start" : 1642873787492,
+      "stop" : 1642873787498,
+      "duration" : 6
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "Capture Screenshot on failure",
+    "time" : {
+      "start" : 1642873797762,
+      "stop" : 1642873798427,
+      "duration" : 665
+    },
+    "description" : "Capture Screenshot on failure",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4bf2e76ba84731c6",
+      "name" : "loginWithValidCreds",
+      "source" : "4bf2e76ba84731c6.png",
+      "type" : "image/png",
+      "size" : 130079
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "afterTest",
+    "time" : {
+      "start" : 1642873799867,
+      "stop" : 1642873800100,
+      "duration" : 233
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.authentication.LoginTestWithBaseTest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.authentication.LoginTestWithBaseTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "loginWithValidCreds"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression"
+  }, {
+    "name" : "suite",
+    "value" : "Authentication"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.authentication.LoginTestWithBaseTest"
+  }, {
+    "name" : "host",
+    "value" : "LVNHCMAC0000276"
+  }, {
+    "name" : "thread",
+    "value" : "61864@LVNHCMAC0000276.TestNG-tests-1(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "systemPort",
+    "value" : "8300"
+  }, {
+    "name" : "udid",
+    "value" : "09261FDD4003CH"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "27e1baf93848f71d.json",
+  "parameterValues" : [ "8300", "09261FDD4003CH" ]
+}

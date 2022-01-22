@@ -1,0 +1,68 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test.authentication",
+    "children" : [ {
+      "name" : "LoginTestWithBaseTest",
+      "children" : [ {
+        "name" : "loginWithValidCreds",
+        "uid" : "320e07d2ebbb431",
+        "parentUid" : "0e6fe68d453229168a782233015206c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642873830681,
+          "stop" : 1642873840721,
+          "duration" : 10040
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "8300", "09261FDD4003CH" ]
+      }, {
+        "name" : "testMethod02",
+        "uid" : "37c8438bc2034d36",
+        "parentUid" : "0e6fe68d453229168a782233015206c6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642873841703,
+          "stop" : 1642873841859,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "8300", "09261FDD4003CH" ]
+      } ],
+      "uid" : "0e6fe68d453229168a782233015206c6"
+    }, {
+      "name" : "LoginTestWithBaseTest2",
+      "children" : [ {
+        "name" : "loginWithValidCreds",
+        "uid" : "d792a0b1bf212493",
+        "parentUid" : "cb1ac8584eefbe30935567bac234f0a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642873830681,
+          "stop" : 1642873841001,
+          "duration" : 10320
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "8400", "99251FFAZ005TH" ]
+      } ],
+      "uid" : "cb1ac8584eefbe30935567bac234f0a8"
+    } ],
+    "uid" : "test.authentication"
+  } ]
+}

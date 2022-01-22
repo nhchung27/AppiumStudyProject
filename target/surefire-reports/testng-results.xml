@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression" duration-ms="35" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+    <groups>
+    </groups>
+    <test name="Authentication" duration-ms="35" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+      <class name="test.testng.TestNGHooks">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.testng.TestNGHooks@536aaa8d]" name="beforeTest" is-config="true" duration-ms="5" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.testng.TestNGHooks@536aaa8d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:test.testng.TestNGHooks@536aaa8d]" name="testA" duration-ms="1" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="testB()[pri:0, instance:test.testng.TestNGHooks@536aaa8d]" name="testB" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+      </class> <!-- test.testng.TestNGHooks -->
+      <class name="test.testng.TestNGHooksEx">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.testng.TestNGHooksEx@57e1b0c]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.testng.TestNGHooksEx@57e1b0c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:test.testng.TestNGHooksEx@57e1b0c]" name="testA" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="testB()[pri:0, instance:test.testng.TestNGHooksEx@57e1b0c]" name="testB" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+      </class> <!-- test.testng.TestNGHooksEx -->
+    </test> <!-- Authentication -->
+  </suite> <!-- Regression -->
+</testng-results>
