@@ -1,0 +1,25 @@
+{
+  "capabilities": [
+    {
+      "version": "9",
+      "maxInstances": 1,
+      "platform": "ANDROID",
+      "deviceName": "Pixel 4",
+      "udid": "99251FFAZ005TH"
+    }
+  ],
+  "configuration": {
+    "cleanUpCycle": 2000,
+    "timeout": 30000,
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "url": "http://192.168.1.104:7000/wd/hub",
+    "host": "192.168.1.104",
+    "port": 7000,
+    "maxSession": 1,
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444,
+    "hubHost": "192.168.1.104",
+    "hubProtocol": "http"
+  }
+}

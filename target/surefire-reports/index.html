@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Regression">
-                    <span>Regression.xml</span>
+                    <span>TestBaseTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Regression">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,22 +104,17 @@
                     <div class="method-list-content passed suite-Regression">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="test.testng.TestNGHooksEx" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="test.authentication.LoginTestWithBaseTest" hash-for-method="loginWithValidCreds">loginWithValidCreds</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="test.testng.TestNGHooks" hash-for-method="testA">testA</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="test.authentication.LoginTestWithBaseTest2" hash-for-method="loginWithValidCreds">loginWithValidCreds</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="test.testng.TestNGHooksEx" hash-for-method="testB">testB</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="test.testng.TestNGHooks" hash-for-method="testB">testB</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="test.authentication.LoginTestWithBaseTest" hash-for-method="testMethod02">testMethod02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -137,21 +132,14 @@
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.testng.TestNGHooksEx</span>
+              <span class="class-name">test.authentication.LoginTestWithBaseTest2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testA">
-                  </a> <!-- testA -->
-                  <span class="method-name">testA</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testB">
-                  </a> <!-- testB -->
-                  <span class="method-name">testB</span>
+                  <a name="loginWithValidCreds">
+                  </a> <!-- loginWithValidCreds -->
+                  <span class="method-name">loginWithValidCreds</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,21 +147,21 @@
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.testng.TestNGHooks</span>
+              <span class="class-name">test.authentication.LoginTestWithBaseTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testA">
-                  </a> <!-- testA -->
-                  <span class="method-name">testA</span>
+                  <a name="loginWithValidCreds">
+                  </a> <!-- loginWithValidCreds -->
+                  <span class="method-name">loginWithValidCreds</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testB">
-                  </a> <!-- testB -->
-                  <span class="method-name">testB</span>
+                  <a name="testMethod02">
+                  </a> <!-- testMethod02 -->
+                  <span class="method-name">testMethod02</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -181,19 +169,27 @@
         </div> <!-- panel Regression -->
         <div panel-name="test-xml-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/nhchung/IdeaProjects/AppiumStudyProject/src/main/resources/test-suites/Regression.xml</span>
+            <span class="header-content">/Users/nhchung/IdeaProjects/AppiumStudyProject/src/main/resources/test-suites/TestBaseTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Regression&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Authentication&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Regression&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; verbose=&quot;0&quot; name=&quot;Authentication&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;09261FDD4003CH&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;8300&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.testng.TestNGHooks&quot;/&gt;
-      &lt;class name=&quot;test.testng.TestNGHooksEx&quot;/&gt;
+      &lt;class name=&quot;test.authentication.LoginTestWithBaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Authentication --&gt;
+  &lt;test thread-count=&quot;10&quot; verbose=&quot;0&quot; name=&quot;Authentication 2&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;99251FFAZ005TH&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;8400&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.authentication.LoginTestWithBaseTest2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Authentication 2 --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,7 +201,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Authentication (2 classes)</span>
+                <span class="test-name">Authentication (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Authentication 2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,28 +230,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testA')
-data.setCell(0, 2, 'test.testng.TestNGHooks')
-data.setCell(0, 3, 1);
+data.setCell(0, 1, 'loginWithValidCreds')
+data.setCell(0, 2, 'test.authentication.LoginTestWithBaseTest2')
+data.setCell(0, 3, 12590);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testB')
-data.setCell(1, 2, 'test.testng.TestNGHooksEx')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'loginWithValidCreds')
+data.setCell(1, 2, 'test.authentication.LoginTestWithBaseTest')
+data.setCell(1, 3, 7994);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testB')
-data.setCell(2, 2, 'test.testng.TestNGHooks')
-data.setCell(2, 3, 0);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testA')
-data.setCell(3, 2, 'test.testng.TestNGHooksEx')
-data.setCell(3, 3, 0);
+data.setCell(2, 1, 'testMethod02')
+data.setCell(2, 2, 'test.authentication.LoginTestWithBaseTest')
+data.setCell(2, 3, 1202);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -278,48 +273,62 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.testng.TestNGHooks</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.authentication.LoginTestWithBaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
+                <span class="method-name">beforeTest(09261FDD4003CH, 8300)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.testng.TestNGHooksEx</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.authentication.LoginTestWithBaseTest2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">5 ms</span>
+                <span class="method-name">beforeTest(99251FFAZ005TH, 8400)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.testng.TestNGHooks</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">18 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="chronological-class-name">test.authentication.LoginTestWithBaseTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testA</span>
-                <span class="method-start">27 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testB</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-name">loginWithValidCreds</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.testng.TestNGHooksEx</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">31 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="chronological-class-name">test.authentication.LoginTestWithBaseTest2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testA</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-name">loginWithValidCreds</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.authentication.LoginTestWithBaseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=loginWithValidCreds status=SUCCESS method=LoginTestWithBaseTest.loginWithValidCreds...)</span>
+                <span class="method-start">8146 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">testB</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-name">testMethod02</span>
+                <span class="method-start">8155 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=testMethod02 status=SUCCESS method=LoginTestWithBaseTest.testMethod02()[pri:0, inst...)</span>
+                <span class="method-start">9359 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">9361 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.authentication.LoginTestWithBaseTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=loginWithValidCreds status=SUCCESS method=LoginTestWithBaseTest2.loginWithValidCred...)</span>
+                <span class="method-start">12653 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">12654 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

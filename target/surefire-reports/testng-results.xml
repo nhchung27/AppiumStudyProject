@@ -1,47 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="35" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+  <suite name="Regression" duration-ms="12885" started-at="2022-01-23T17:53:29 ICT" finished-at="2022-01-23T17:53:42 ICT">
     <groups>
     </groups>
-    <test name="Authentication" duration-ms="35" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
-      <class name="test.testng.TestNGHooks">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.testng.TestNGHooks@536aaa8d]" name="beforeTest" is-config="true" duration-ms="5" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+    <test name="Authentication" duration-ms="9581" started-at="2022-01-23T17:53:29 ICT" finished-at="2022-01-23T17:53:39 ICT">
+      <class name="test.authentication.LoginTestWithBaseTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:test.authentication.LoginTestWithBaseTest@2ca47471]" name="beforeTest" is-config="true" duration-ms="25" started-at="2022-01-23T17:53:29 ICT" description="Init all appium sessions" finished-at="2022-01-23T17:53:29 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[09261FDD4003CH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8300]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.testng.TestNGHooks@536aaa8d]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+        <test-method status="PASS" signature="loginWithValidCreds()[pri:0, instance:test.authentication.LoginTestWithBaseTest@2ca47471]" name="loginWithValidCreds" duration-ms="7994" started-at="2022-01-23T17:53:29 ICT" finished-at="2022-01-23T17:53:37 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:test.testng.TestNGHooks@536aaa8d]" name="testA" duration-ms="1" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+        </test-method> <!-- loginWithValidCreds -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.authentication.LoginTestWithBaseTest@2ca47471]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-23T17:53:37 ICT" description="Capture Screenshot on failure" finished-at="2022-01-23T17:53:37 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithValidCreds status=SUCCESS method=LoginTestWithBaseTest.loginWithValidCreds()[pri:0, instance:test.authentication.LoginTestWithBaseTest@2ca47471] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="testB()[pri:0, instance:test.testng.TestNGHooks@536aaa8d]" name="testB" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testMethod02()[pri:0, instance:test.authentication.LoginTestWithBaseTest@2ca47471]" name="testMethod02" duration-ms="1202" started-at="2022-01-23T17:53:37 ICT" finished-at="2022-01-23T17:53:39 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testB -->
-      </class> <!-- test.testng.TestNGHooks -->
-      <class name="test.testng.TestNGHooksEx">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.testng.TestNGHooksEx@57e1b0c]" name="beforeTest" is-config="true" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+        </test-method> <!-- testMethod02 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.authentication.LoginTestWithBaseTest@2ca47471]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-01-23T17:53:39 ICT" description="Capture Screenshot on failure" finished-at="2022-01-23T17:53:39 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMethod02 status=SUCCESS method=LoginTestWithBaseTest.testMethod02()[pri:0, instance:test.authentication.LoginTestWithBaseTest@2ca47471] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.testng.TestNGHooksEx@57e1b0c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.authentication.LoginTestWithBaseTest@2ca47471]" name="afterTest" is-config="true" duration-ms="212" started-at="2022-01-23T17:53:39 ICT" finished-at="2022-01-23T17:53:39 ICT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:test.testng.TestNGHooksEx@57e1b0c]" name="testA" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="testB()[pri:0, instance:test.testng.TestNGHooksEx@57e1b0c]" name="testB" duration-ms="0" started-at="2022-01-20T00:29:26 ICT" finished-at="2022-01-20T00:29:26 ICT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testB -->
-      </class> <!-- test.testng.TestNGHooksEx -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.authentication.LoginTestWithBaseTest -->
     </test> <!-- Authentication -->
+    <test name="Authentication 2" duration-ms="12885" started-at="2022-01-23T17:53:29 ICT" finished-at="2022-01-23T17:53:42 ICT">
+      <class name="test.authentication.LoginTestWithBaseTest2">
+        <test-method status="PASS" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:test.authentication.LoginTestWithBaseTest2@4362d7df]" name="beforeTest" is-config="true" duration-ms="25" started-at="2022-01-23T17:53:29 ICT" description="Init all appium sessions" finished-at="2022-01-23T17:53:29 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[99251FFAZ005TH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8400]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginWithValidCreds()[pri:0, instance:test.authentication.LoginTestWithBaseTest2@4362d7df]" name="loginWithValidCreds" duration-ms="12590" started-at="2022-01-23T17:53:29 ICT" finished-at="2022-01-23T17:53:42 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCreds -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:test.authentication.LoginTestWithBaseTest2@4362d7df]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-01-23T17:53:42 ICT" description="Capture Screenshot on failure" finished-at="2022-01-23T17:53:42 ICT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithValidCreds status=SUCCESS method=LoginTestWithBaseTest2.loginWithValidCreds()[pri:0, instance:test.authentication.LoginTestWithBaseTest2@4362d7df] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.authentication.LoginTestWithBaseTest2@4362d7df]" name="afterTest" is-config="true" duration-ms="224" started-at="2022-01-23T17:53:42 ICT" finished-at="2022-01-23T17:53:42 ICT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.authentication.LoginTestWithBaseTest2 -->
+    </test> <!-- Authentication 2 -->
   </suite> <!-- Regression -->
 </testng-results>

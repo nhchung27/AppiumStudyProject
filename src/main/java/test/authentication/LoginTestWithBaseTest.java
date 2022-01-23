@@ -22,7 +22,6 @@ public class LoginTestWithBaseTest extends BaseTest {
         AppiumDriver<MobileElement> androidDriver = getAndroidDriver();
         LoginFlow loginFlow = new LoginFlow(androidDriver);
         loginFlow.setData(loginCredData).login().verifyLogin();
-        Assert.fail();
 
     }
 
@@ -30,6 +29,5 @@ public class LoginTestWithBaseTest extends BaseTest {
     public void testMethod02(){
         LoginPage loginPage = new LoginPage(getAndroidDriver());
         loginPage.bottomNavigationComp().clickOnLoginLabel();
-        Assert.fail();
     }
 }
